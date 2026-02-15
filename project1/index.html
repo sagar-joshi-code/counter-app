@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter App</title>
+    <style>
+      body {
+        background-color: #e0f7fa; /* light cyan background */
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .counter-card {
+        background-color: #ffffff; /* white card */
+        padding: 40px 50px;
+        border-radius: 15px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 60px;
+        margin-bottom: 30px;
+        color: #00796b;
+      }
+
+      .btn-group {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 20px;
+      }
+
+      .btn-group-auto {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+      }
+
+      button {
+        padding: 12px 25px;
+        font-size: 18px;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        transition:
+          transform 0.1s,
+          box-shadow 0.1s;
+      }
+
+      button:hover {
+        transform: scale(1.05);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Colors for buttons */
+      #inc {
+        background-color: #ff9800;
+        color: white;
+      }
+      #dec {
+        background-color: #9c27b0;
+        color: white;
+      }
+      #reset {
+        background-color: #2196f3;
+        color: white;
+      }
+      #start {
+        background-color: #4caf50;
+        color: white;
+      }
+      #stop {
+        background-color: #f44336;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="counter-card">
+      <h1 id="count">0</h1>
+
+      <div class="btn-group">
+        <button id="inc">Increase</button>
+        <button id="dec">Decrease</button>
+        <button id="reset">Reset</button>
+      </div>
+
+      <div class="btn-group-auto">
+        <button id="start">Start Auto</button>
+        <button id="stop">Stop Auto</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
